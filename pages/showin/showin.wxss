@@ -1,0 +1,40 @@
+/* pages/showin/showin.wxss */
+.background {
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+.date{
+  position: fixed;
+  width: 100%;
+  height: 60rpx;
+  text-align: center;
+  color: red;
+  font-size: 125rpx;
+  font-weight: 900;
+}
+
+.sid{
+  position: fixed;
+  right: 5%;
+  top: 61%;
+  color: black;
+  font-size: 40rpx;
+}
+
+.name{
+  position: fixed;
+  right: 5%;
+  top: 70%;
+  color:black;
+  font-size: 40rpx;
+}
+
+.major{
+  position: fixed;
+  right: 5%;
+  top: 80%;
+  color: black;
+  font-size: 40rpx;
+}

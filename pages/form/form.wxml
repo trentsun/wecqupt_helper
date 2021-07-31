@@ -1,0 +1,7 @@
+<!--pages/form/form.wxml-->
+<form bindsubmit="submit">
+  <input name="major" placeholder="请输入学院" placeholder-class="center" type='text' style='text-align:center'></input>
+  <input name="sid" placeholder="请输入学号" placeholder-class="center" type='text' style='text-align:center'></input>
+  <input name="name" placeholder="请输入名字" placeholder-class="center" type='text' style='text-align:center'></input>
+   <button form-type="submit">提交</button>
+</form>

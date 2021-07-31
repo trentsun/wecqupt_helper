@@ -1,0 +1,4 @@
+/* pages/form/form.wxss */
+.center{
+  text-align: center;
+}

@@ -1,0 +1,9 @@
+<!--pages/showout/showout.wxml-->
+
+<image class="background" src = "/images/allow_out.png"/>
+
+<text class="date">{{date}}</text>
+
+<text class="sid" >{{sid}}</text>
+<text class="name" >{{name}}</text>
+<text class="major" >{{major}}</text>

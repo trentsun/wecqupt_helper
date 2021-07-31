@@ -1,0 +1,121 @@
+/* pages/detail/detail.wxss */
+
+.top-text{
+  width: 100%;
+  height: 9%;
+  color: grey;
+  background-color: #F7F7F7;
+}
+.font{
+  font-size: 30rpx;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.name{
+  position: fixed;
+  font-size: 30rpx;
+  top: 10%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.apply-time{
+  position: fixed;
+  font-size: 30rpx;
+  top: 15%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.leave-text{
+  position: fixed;
+  font-size: 30rpx;
+  top: 20%;
+  right:5.5%;
+  /* color:#9E8EE1; */
+}
+
+.out-location{
+  position: fixed;
+  font-size: 30rpx;
+  top: 24%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.in-location{
+  position: fixed;
+  font-size: 30rpx;
+  top: 38%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.comein-text{
+  position: fixed;
+  font-size: 30rpx;
+  top: 34%;
+  right:5.5%;
+  /* color: #9E8EE1; */
+}
+
+.out-time{
+  position: fixed;
+  font-size: 30rpx;
+  top: 28%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.in-time{
+  position: fixed;
+  font-size: 30rpx;
+  top: 42%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.sid{
+  position: fixed;
+  font-size: 30rpx;
+  top: 55%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.sname{
+  position: fixed;
+  font-size: 30rpx;
+  top: 59%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.out-date{
+  position: fixed;
+  font-size: 30rpx;
+  top: 67.5%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.in-date{
+  position: fixed;
+  font-size: 30rpx;
+  top: 72%;
+  right:5.5%;
+  color:#7F7F7F;
+}
+
+.purple{
+  position: fixed;
+  top: 30%;
+  left: 6.5%;
+  width: 5%;
+  height: 3%;
+
+}

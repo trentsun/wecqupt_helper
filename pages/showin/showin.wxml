@@ -1,0 +1,9 @@
+<!--pages/showin/showin.wxml-->
+
+<image class="background" src = "/images/allow_in.png"/>
+
+<text class="date">{{date}}</text>
+
+<text class="sid" >{{sid}}</text>
+<text class="name" >{{name}}</text>
+<text class="major" >{{major}}</text>

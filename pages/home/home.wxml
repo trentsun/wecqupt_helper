@@ -1,0 +1,11 @@
+<!--pages/home.wxml-->
+<!-- <text>pages/home.wxml</text> -->
+<!-- <image src="/images/girl.png" mode="aspectFill"></image> -->
+<image class="background" src = "/images/home.jpg"/>
+<view bindtap='declare'>
+      <image class="add-icon" ></image>
+</view>
+ 
+ <view bindtap='clear'>
+      <image class="clear" ></image>
+</view>

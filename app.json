@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/form/form",
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/goout/goout",
+    "pages/detail/detail",
+    "pages/showout/showout",
+    "pages/showin/showin"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#45E2AD",
+    "navigationBarTitleText": "We重邮",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
