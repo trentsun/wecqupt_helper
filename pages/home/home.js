@@ -1,4 +1,5 @@
 // pages/home.js
+var app = getApp()
 Page({
 
   /**
@@ -12,7 +13,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(app.globalData.major);
+    console.log(app.globalData.sid);
+    console.log(app.globalData.name);
+    console.log(app.globalData.accessCount);
+    console.log(app.globalData.accessLocation);
   },
 
   //JS代码

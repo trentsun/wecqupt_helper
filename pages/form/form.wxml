@@ -1,7 +1,21 @@
 <!--pages/form/form.wxml-->
 <form bindsubmit="submit">
-  <input name="major" placeholder="请输入学院" placeholder-class="center" type='text' style='text-align:center'></input>
-  <input name="sid" placeholder="请输入学号" placeholder-class="center" type='text' style='text-align:center'></input>
-  <input name="name" placeholder="请输入名字" placeholder-class="center" type='text' style='text-align:center'></input>
-   <button form-type="submit">提交</button>
+  <input class="input-radius" name="major" value='{{major}}' placeholder="请输入学院" placeholder-class="center" type='text' style='text-align:center'></input>
+  <input class="input-radius" name="sid" value='{{sid}}' placeholder="请输入学号" placeholder-class="center" type='text' style='text-align:center'></input>
+  <input class="input-radius" name="name" value='{{name}}' placeholder="请输入名字" placeholder-class="center" type='text' style='text-align:center'></input>
+  <input class="input-radius" name="accessCount" value='{{accessCount}}' placeholder="请输入出入校人次" placeholder-class="center" type='text' style='text-align:center'></input>
+  <!-- <input class="input-radius" name="accessLocation" value='{{accessLocation}}' placeholder="请输入出入校地点" placeholder-class="center" type='text' style='text-align:center'></input> -->
+  <view class="colContent">
+    <view class='select_box'>
+    <view class='select' catchtap='selectTap'>
+        <text class='select_text'>{{locations[index]}}</text>
+        <!-- <image class='select_img {{selectShow&&"select_img_rotate"}}' src='../../images/b2.png'  background-size="contain"></image>  -->
+    </view>
+    <view class='option_box' style='height:{{selectShow?(locations.length>5?325:locations.length*50):0}}rpx;'>
+        <text class='option' wx:for='{{locations}}' wx:key='this' data-index='{{index}}' catchtap='optionTap'>{{item}}</text>
+    </view>
+</view>
+<view class="space"></view>
+  </view>
+   <button class="submit" form-type="submit">提交</button>
 </form>

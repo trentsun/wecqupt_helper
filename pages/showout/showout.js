@@ -26,7 +26,13 @@ Page({
     date:null,
     name:null,
     sid:null,
-    major:null
+    major:null,
+    accessCount: null,
+    accessLocation: null,
+    avatarSrcImage:"/images/wecqupt_helper.png",
+    welcomeSrcImage:"/images/welcome_out.png",
+    majorSrcImage:"/images/major.jpg",
+    sidSrcImage:"/images/sid.png",
   },
 
   /**
@@ -38,8 +44,9 @@ Page({
       date: `${date.Format("yyyy-MM-dd")}`,
       sid: app.globalData.sid,
       name: app.globalData.name,
-      major: app.globalData.major
-
+      major: app.globalData.major,
+      accessCount: app.globalData.accessCount,
+      accessLocation: app.globalData.accessLocation,
     })
   },
 

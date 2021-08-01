@@ -26,7 +26,14 @@ Page({
     date:null,
     name:null,
     sid:null,
-    major:null
+    major:null,
+    accessCount: null,
+    accessLocation: null,
+    avatarSrcImage:"/images/wecqupt_helper.png",
+    welcomeSrcImage:"/images/welcome_in.png",
+    majorSrcImage:"/images/sid.png",
+    sidSrcImage:"/images/major.jpg",
+    avatarLeft: 0,
   },
 
   /**
@@ -38,9 +45,20 @@ Page({
       date: `${date.Format("yyyy-MM-dd")}`,
       sid: app.globalData.sid,
       name: app.globalData.name,
-      major: app.globalData.major
-
+      major: app.globalData.major,
+      accessCount: app.globalData.accessCount,
+      accessLocation: app.globalData.accessLocation,
     })
+  },
+
+  loadSomeView: function() {
+    let screenWidth = wx.getSystemInfo.screenWidth;
+    let query = wx.createSelectorQuery();
+    query.select('.avatar').boundingClientRect();
+    query.exec(res =>{
+      let w1 = res[0].width;
+      let avatarLeft = (screenWidth - w1) / 2;
+    });
   },
 
   /**

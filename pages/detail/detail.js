@@ -36,8 +36,8 @@ Page({
     leaveColor:'',
     backColor:'',
     imageSrc:"/images/prepare.png",
-    outLocation:'崇文门',
-    inLocation:'崇文门'
+    outLocation:null,
+    inLocation:null,
   },
 
   /**
@@ -103,6 +103,8 @@ Page({
       major : app.globalData.major,
       sid : app.globalData.sid,
       name : app.globalData.name,
+      outLocation: app.globalData.state == 2 ? app.globalData.accessLocation: "",
+      inLocation: app.globalData.state == 3 ? app.globalData.accessLocation: "",
       outDate: now,
       inDate: now,
       applyTime:apply,

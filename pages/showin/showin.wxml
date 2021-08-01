@@ -1,9 +1,53 @@
 <!--pages/showin/showin.wxml-->
 
-<image class="background" src = "/images/allow_in.png"/>
+<!-- <image class="background" src = "/images/allow_in.png"/> -->
 
 <text class="date">{{date}}</text>
 
-<text class="sid" >{{sid}}</text>
+<view class="topbar">
+
+</view>
+
+<view class="rowContent">
+  <image src='{{avatarSrcImage}}'  class='avatar'></image>
+</view>
+
+
+<view class="card">
+  <view class="rowContent">
+    <text class="welcome" style="white-space:pre-wrap"><text class="welcome">欢迎</text><text class="welcome-name" style="white-space:pre-wrap">{{name}}</text></text>
+    <text class="line2" style="white-space:pre-wrap">您是今天第<text class="big-number"  style="white-space:pre-wrap">{{accessCount}}</text><text>个</text></text>
+    <text class="common-text" style="white-space:pre-wrap">从{{accessLocation}}扫码入校的同学</text>
+
+    <image src='{{welcomeSrcImage}}' class="welcome-image" ></image>
+  </view>
+</view>  
+<view class="space"></view>
+
+<view class="contentBetween">
+  <view class="colContent-left">
+    <image src="{{sidSrcImage}}" class="icon"></image>
+    <text style="white-space:pre-wrap" class="text-grey"> 学号：</text>
+  </view>
+  <text style="white-space:pre-wrap" class="text-grey">{{sid}}</text>
+</view>
+<view class="colContent">
+  <view class="divider"></view>
+</view>
+
+<view class="space"></view>
+<view class="contentBetween">
+  <view class="colContent-left">
+    <image src="{{majorSrcImage}}" class="icon"></image>
+  <text style="white-space:pre-wrap" class="text-grey"> 学院：</text>
+  </view>
+  <text style="white-space:pre-wrap" class="text-grey">{{major}}</text>
+</view>
+<view class="colContent">
+  <view class="divider"></view>
+</view>
+
+
+<!-- <text class="sid" >{{sid}}</text>
 <text class="name" >{{name}}</text>
-<text class="major" >{{major}}</text>
+<text class="major" >{{major}}</text> -->
