@@ -3,19 +3,19 @@ var app = getApp();
 
 Date.prototype.Format = function (fmt) { // author: meizz
   var o = {
-      "M+": this.getMonth() + 1, // 月份
-      "d+": this.getDate(), // 日
-      "h+": this.getHours(), // 小时
-      "m+": this.getMinutes(), // 分
-      "s+": this.getSeconds(), // 秒
-      "q+": Math.floor((this.getMonth() + 3) / 3), // 季度
-      "S": this.getMilliseconds() // 毫秒
+    "M+": this.getMonth() + 1, // 月份
+    "d+": this.getDate(), // 日
+    "h+": this.getHours(), // 小时
+    "m+": this.getMinutes(), // 分
+    "s+": this.getSeconds(), // 秒
+    "q+": Math.floor((this.getMonth() + 3) / 3), // 季度
+    "S": this.getMilliseconds() // 毫秒
   };
   if (/(y+)/.test(fmt))
-      fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
   for (var k in o)
-      if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
-          return fmt;
+    if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+  return fmt;
 }
 Page({
 
@@ -23,16 +23,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-    date:null,
-    name:null,
-    sid:null,
-    major:null,
+    date: null,
+    name: null,
+    sid: null,
+    major: null,
     accessCount: null,
     accessLocation: null,
-    avatarSrcImage:"/images/wecqupt_helper.png",
-    welcomeSrcImage:"/images/welcome_in.png",
-    majorSrcImage:"/images/sid.png",
-    sidSrcImage:"/images/major.jpg",
+    avatarSrcImage: "/images/wecqupt_helper.png",
+    welcomeSrcImage: "/images/welcome_in.png",
+    majorSrcImage: "/images/sid.png",
+    sidSrcImage: "/images/major.jpg",
     avatarLeft: 0,
   },
 
@@ -51,11 +51,11 @@ Page({
     })
   },
 
-  loadSomeView: function() {
+  loadSomeView: function () {
     let screenWidth = wx.getSystemInfo.screenWidth;
     let query = wx.createSelectorQuery();
     query.select('.avatar').boundingClientRect();
-    query.exec(res =>{
+    query.exec(res => {
       let w1 = res[0].width;
       let avatarLeft = (screenWidth - w1) / 2;
     });

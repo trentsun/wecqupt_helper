@@ -12,8 +12,8 @@ Page({
     accessCount: null,
     accessLocation: null,
 
-    selectShow: false,//控制下拉列表的显示隐藏，false隐藏、true显示
-    locations: ['崇文门', '腾飞门'],//下拉列表的数据
+    selectShow: false,// 控制下拉列表的显示隐藏，false隐藏、true显示
+    locations: ['崇文门', '腾飞门'],// 下拉列表的数据
     index: 0,//选择的下拉列表下标
   },
 
@@ -25,7 +25,7 @@ Page({
     },
     // 点击下拉列表
     optionTap(e) {
-      let Index = e.currentTarget.dataset.index;//获取点击的下拉列表的下标
+      let Index = e.currentTarget.dataset.index;// 获取点击的下拉列表的下标
       this.setData({
         index: Index,
         selectShow: !this.data.selectShow
@@ -55,10 +55,6 @@ Page({
       key: 'login',
     });
     this.initParam(d)
-    // 不太懂为啥要赋值2遍，先注释了
-    // app.globalData.major = d.major;
-    // app.globalData.sid = d.sid;
-    // app.globalData.name = d.name;
     wx.setStorage({
       data: d.major,
       key: 'major',
@@ -146,16 +142,6 @@ Page({
         app.globalData.accessLocation = that.data.locations[that.data.index];
         that.data.accessLocation = that.data.locations[that.data.index];
         that.setData(that.data);
-        // wx.getStorage({
-        //   key: 'accessLocation',
-        //   success:function(value){
-        //     app.globalData.accessLocation = value.data;
-        //     if (value.data != null) {
-        //       that.data.accessLocation = value.data
-        //       that.setData(that.data);
-        //     }
-        //   }
-        // })
 
         // 每次都不先路由到主页面，先填写一些数据
         // wx.navigateTo({

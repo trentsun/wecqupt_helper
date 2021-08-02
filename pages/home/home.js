@@ -20,41 +20,39 @@ Page({
     console.log(app.globalData.accessLocation);
   },
 
-  //JS代码
- 
-    declare: function () {
- 
-        wx.navigateTo({
-     
-          url: '/pages/goout/goout',
-     
-          success: function (res) { },
-     
-          fail: function (res) { },
-     
-          complete: function (res) { },
-     
-        })
-     
-      },
+  declare: function () {
 
-    clear: function () {
-        wx.removeStorage({
-          key: 'isLeave',
-        });
+    wx.navigateTo({
 
-        wx.removeStorage({
-          key: 'isBack',
-        });
+      url: '/pages/goout/goout',
 
-        wx.removeStorage({
-          key: 'leaveTime',
-        });
+      success: function (res) {},
 
-        wx.removeStorage({
-          key: 'backTime',
-        })
-      },
+      fail: function (res) {},
+
+      complete: function (res) {},
+
+    })
+
+  },
+
+  clear: function () {
+    wx.removeStorage({
+      key: 'isLeave',
+    });
+
+    wx.removeStorage({
+      key: 'isBack',
+    });
+
+    wx.removeStorage({
+      key: 'leaveTime',
+    });
+
+    wx.removeStorage({
+      key: 'backTime',
+    })
+  },
 
 
   /**

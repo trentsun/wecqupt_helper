@@ -1,5 +1,5 @@
 <!--pages/goout/goout.wxml-->
-<image class="top-image" src = "/images/declare.jpg"></image>
+<image class="top-image" src="/images/declare.jpg"></image>
 <view bindtap='detail'>
-      <image class="add-icon" ></image>
+        <image class="add-icon"></image>
 </view>

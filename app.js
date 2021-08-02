@@ -1,15 +1,15 @@
 //app.js
 App({
 
-  globalData:{
-    major:null,
-    sid:null,
-    name:null,
-    state:1,
+  globalData: {
+    major: null,
+    sid: null,
+    name: null,
+    state: 1,
     accessCount: 0,
     accessLocation: '崇文门',
-    outLocation:'崇文门',
-    inLocation:'崇文门'
+    outLocation: '崇文门',
+    inLocation: '崇文门'
   },
 
   onLaunch: function () {

@@ -1,7 +1,8 @@
 .space {
   margin-top: 5%;
 }
-.date{
+
+.date {
   position: fixed;
   width: 100%;
   height: 60rpx;
@@ -13,26 +14,28 @@
   /* position: relative; */
 }
 
-.topbar{
+.topbar {
   width: 100%;
   height: 250rpx;
-  background: rgba(144,133,255);
+  background: rgba(144, 133, 255);
   position: relative;
 }
+
 .imagesize image {
-  height: 100px;    
-  width: 100px; 
-}
-.avatar{   
-height: 80px;    
-width: 80px; 
- margin-top: -150rpx;
- border-radius: 90px;
- z-index: 10;
- position: relative;
+  height: 100px;
+  width: 100px;
 }
 
-.card{
+.avatar {
+  height: 80px;
+  width: 80px;
+  margin-top: -150rpx;
+  border-radius: 90px;
+  z-index: 10;
+  position: relative;
+}
+
+.card {
   width: 80%;
   margin-left: 10%;
   margin-top: -100rpx;
@@ -44,9 +47,9 @@ width: 80px;
   z-index: 5;
   position: relative;
   background-color: white;
- }
+}
 
- .rowContent {
+.rowContent {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -86,60 +89,60 @@ width: 80px;
   justify-content: right;
 }
 
- .welcome{
-   margin-top: 50px;
-   color: blue;
-   font-size: medium;
-   font-weight: 900;
- }
+.welcome {
+  margin-top: 50px;
+  color: blue;
+  font-size: medium;
+  font-weight: 900;
+}
 
- .welcome-name{
-   color: blue;
-   font-size: 100rpx;
-   font-weight: 900;
- }
+.welcome-name {
+  color: blue;
+  font-size: 100rpx;
+  font-weight: 900;
+}
 
- .welcome-image{
-   width: 80%;
-   height: 150px;
-   margin-top: 10px;
+.welcome-image {
+  width: 80%;
+  height: 150px;
+  margin-top: 10px;
   border-radius: 30rpx;
- }
+}
 
- .line2{
+.line2 {
   color: rgba(14, 20, 183);
   font-size: medium;
   margin-top: -6%;
- }
+}
 
- .common-text{
+.common-text {
   color: rgba(14, 20, 183);
   font-size: medium;
- }
+}
 
- .text-grey{
-   color: rgb(167,167,167)
- }
+.text-grey {
+  color: rgb(167, 167, 167)
+}
 
- .big-number{
+.big-number {
   color: rgba(100, 193, 155);
   font-size: 100rpx;
   font-weight: 900;
- }
+}
 
- .icon {
-   width: 50rpx;
-   height: 50rpx;
- }
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+}
 
- .divider{
-   width: 90%;
-   height: 3rpx;
-   background: grey;
-   margin-top: 1%;
- }
+.divider {
+  width: 90%;
+  height: 3rpx;
+  background: grey;
+  margin-top: 1%;
+}
 
-.sid{
+.sid {
   position: fixed;
   right: 5%;
   top: 61%;
@@ -147,15 +150,15 @@ width: 80px;
   font-size: 40rpx;
 }
 
-.name{
+.name {
   position: fixed;
   right: 5%;
   top: 70%;
-  color:black;
+  color: black;
   font-size: 40rpx;
 }
 
-.major{
+.major {
   position: fixed;
   right: 5%;
   top: 80%;

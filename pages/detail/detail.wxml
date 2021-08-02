@@ -1,24 +1,19 @@
-<!--pages/detail/detail.wxml-->
-<!-- <view class="top-text">
-<text class="font" decode="{{true}}" space="{{true}}">&nbsp;&nbsp;申请流程</text>
- </view> -->
-<image class = "background" src="{{imageSrc}}"/>
+<image class="background" src="{{imageSrc}}" />
 
-<text  class="name">{{name}}</text>
+<text class="name">{{name}}</text>
 <text class="apply-time">{{applyTime}}</text>
 
 <view bindtap='leave' disabled="{{isLeave}}">
-      <text decode="{{true}}" space="{{true}}" class="leave-text" style="color:{{leaveColor}}" > &emsp;&emsp;&emsp;&emsp;</text>
+        <text decode="{{true}}" space="{{true}}" class="leave-text" style="color:{{leaveColor}}">
+    &emsp;&emsp;&emsp;&emsp;</text>
 </view>
 
 <text class="out-location">{{outLocation}}</text>
 
 <text class="out-time"> {{leaveTime}}</text>
-
-
-
 <view bindtap='comein' disable="{{isBack}}">
-      <text decode="{{true}}" space="{{true}}" class="comein-text" style="color:{{backColor}}" > &emsp;&emsp;&emsp;&emsp;</text>
+        <text decode="{{true}}" space="{{true}}" class="comein-text" style="color:{{backColor}}">
+    &emsp;&emsp;&emsp;&emsp;</text>
 </view>
 <text class="in-location">{{inLocation}}</text>
 <text class="in-time">{{comeinTime}}</text>
@@ -27,5 +22,3 @@
 <text class="sname">{{name}}</text>
 <text class="out-date">{{outDate}}</text>
 <text class="in-date">{{inDate}}</text>
-
-<!-- <image class="purple" wx:if="{{isBack}}" src = "/images/purple.jpg"/> -->

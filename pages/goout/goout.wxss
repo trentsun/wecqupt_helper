@@ -1,12 +1,12 @@
 /* pages/goout/goout.wxss */
 
 .top-image {
-  width:100%;
-  height:100%;
-  position:absolute;
+  width: 100%;
+  height: 100%;
+  position: absolute;
 }
 
-.add-icon{
+.add-icon {
   position: fixed;
   width: 100%;
   height: 10%;
